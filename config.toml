@@ -1,0 +1,61 @@
+BaseUrl= "http://zhanhao.xyz/"
+LanguageCode= "zh-CN"
+Title= "测试博客"
+paginate = 5
+theme = "casper"
+#DisqusShortname = "hzh"
+Copyright = "All rights reserved - 2016"
+canonifyurls = true
+hasCJKLanguage = true
+
+[params]
+  staticUrl = "http://hzhblog.b0.upaiyun.com/"
+  #staticUrl = "http://localhost:1313/"
+  description = "描述"
+  cover = "images/cover.jpg"
+  author = "Zhanhao"
+  authorlocation = "Guangzhou, China"
+  authorwebsite = "http://zhanhao.xyz/"
+  bio= "my bio"
+  logo = "images/logo.png"
+  #googleAnalyticsUserID = "UA-79101-12"
+  # Optional RSS-Link, if not provided it defaults to the standard index.xml
+  #RSSLink = "http://feeds.feedburner.com/..." 
+  githubName = "shihuihzh"
+  # twitterName = "vjeantet"
+  # facebookName = ""
+  # linkedinName = ""
+  # set true if you are not proud of using Hugo (true will hide the footer note "Proudly published with HUGO.....")
+  hideHUGOSupport = false
+
+
+  [permalinks]
+  post = "/:slug/"
+
+[[menu.main]]
+  name = "Blog"
+  weight = -120
+  identifier = "blog"
+  url = "/"
+
+[[menu.main]]
+  name = "Github repos"
+  weight = 100
+  pre = "<h3>Follow me</h3>"
+  url = "https://github.com/vjeantet"
+
+[[menu.main]]
+  name = "Twitter timeline"
+  weight = 101
+  url = "https://twitter.com/vjeantet"
+
+[[menu.main]]
+  name = "Flipboard magazines"
+  weight = 102
+  url = "https://flipboard.com/@vjeantet"
+
+[[menu.main]]
+  name = "Keybase (secure msg)"
+  weight = 109
+  pre = "<h3>Contact me</h3>"
+  url = "https://Keybase.io/vjeantet"

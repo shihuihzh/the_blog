@@ -27,6 +27,17 @@
 *.i*86
 *.x86_64
 *.hex
+*.exe
+
+
 
 # Debug files
 *.dSYM/
+
+# backup and gens
+*.bak
+logs/
+public/
+bak/
+themes/bak
+themes/casper/static_bak/
