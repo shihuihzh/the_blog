@@ -25,7 +25,7 @@
   font-family: 'SourceHanSans';
   src: url('../fonts/SourceHanSans.eot');
   src:
-    url('../fonts/SourceHanSans.eot?#font-spider') format('embedded-opentype'),
+    url('../fonts/SourceHanSans.eot') format('embedded-opentype'),
     url('../fonts/SourceHanSans.woff') format('woff'),
     url('../fonts/SourceHanSans.ttf') format('truetype'),
     url('../fonts/SourceHanSans.svg') format('svg');
