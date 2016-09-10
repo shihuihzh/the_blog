@@ -57,29 +57,61 @@ function readFile(path, filesList) {
 	}
 }
 
-getAllFileText(fileDir, function(err, text) {
-	console.log(text.length);
-	console.log(text);
-	var fontmin = new Fontmin()
-		.src(srcPath)
-		/*.use(Fontmin.otf2ttf({
-		    text: text
-		}))*/
-		.use(Fontmin.glyph({
-			text: text,
-			hinting: false
-		}))
-		.use(Fontmin.ttf2eot())
-		.use(Fontmin.ttf2woff())
-		.use(Fontmin.ttf2svg())
-		.dest(destPath);
+exports.create = function create() {
+	// 改用 nodejs 用模块调用
+	getAllFileText(fileDir, function(err, text) {
+		console.log(text.length);
+		console.log(text);
+		var fontmin = new Fontmin()
+			.src(srcPath)
+			/*.use(Fontmin.otf2ttf({
+			    text: text
+			}))*/
+			.use(Fontmin.glyph({
+				text: text,
+				hinting: false
+			}))
+			.use(Fontmin.ttf2eot())
+			.use(Fontmin.ttf2woff())
+			.use(Fontmin.ttf2svg())
+			.dest(destPath);
 
-	fontmin.run(function(err, files) {
-		if (err) {
-			throw err;
-		}
+		fontmin.run(function(err, files) {
+			if (err) {
+				throw err;
+			}
 
-		//console.log(files[0]);
-		// => { contents: <Buffer 00 01 00 ...> }
+			//console.log(files[0]);
+			// => { contents: <Buffer 00 01 00 ...> }
+		});
 	});
-});
+
+};
+
+// 改用 nodejs 用模块调用
+// getAllFileText(fileDir, function(err, text) {
+// 	console.log(text.length);
+// 	console.log(text);
+// 	var fontmin = new Fontmin()
+// 		.src(srcPath)
+// 		/*.use(Fontmin.otf2ttf({
+// 		    text: text
+// 		}))*/
+// 		.use(Fontmin.glyph({
+// 			text: text,
+// 			hinting: false
+// 		}))
+// 		.use(Fontmin.ttf2eot())
+// 		.use(Fontmin.ttf2woff())
+// 		.use(Fontmin.ttf2svg())
+// 		.dest(destPath);
+
+// 	fontmin.run(function(err, files) {
+// 		if (err) {
+// 			throw err;
+// 		}
+
+// 		//console.log(files[0]);
+// 		// => { contents: <Buffer 00 01 00 ...> }
+// 	});
+// });
