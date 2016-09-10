@@ -2,26 +2,27 @@ FROM node
 
 MAINTAINER Zhanhao Wong
 
-ENV ARCH linux-64bit
-ENV HUGO_VERSION 0.16
+ENV VERSION_ARCH 0.16_linux-64bit
+ENV VERSION 0.16
+ENV GIT_BLOG_RESP https://github.com/shihuihzh/the_blog.git
 
-ADD ./blog /blog
-
-RUN mkdir /temp \
+RUN apt-get update && apt-get install -y git --no-install-recommends \
+    && rm -r /var/lib/apt/lists/* \
+    && mkdir /blog \
+    && git clone "$GIT_BLOG_RESP" /blog \
+    && mkdir /temp \
     && cd /temp \
-    && curl -SLO https://github.com/spf13/hugo/releases/download/v$HUGO_VERSION/hugo_$HUGO_VERSION_$ARCH.tgz \
-    && tar -zxvf hugo_$HUGO_VERSION_$ARCH.tgz \
-    && mv hugo /blog \
-    && chmod 777 /blog/hugo \
+    && curl -SLO "https://github.com/spf13/hugo/releases/download/v$VERSION/hugo_$VERSION_ARCH.tgz" \
+    && tar -zxvf "hugo_$VERSION_ARCH.tgz" \
+    && mv hugo /blog/blog \
+    && chmod 777 /blog/blog/hugo \
     && cd / \
     && rm -rf /temp \
     && npm install --save fontmin \
-    && apt-get update && apt-get install -y git --no-install-recommends \
-    && rm -r /var/lib/apt/lists/*
+    && npm install --save upyun
 
 
-WORKDIR /blog
+WORKDIR /blog/blog
 
 EXPOSE 8080
 EXPOSE 8888
-
