@@ -15,7 +15,9 @@ RUN mkdir /temp \
     && chmod 777 /blog/hugo \
     && cd / \
     && rm -rf /temp \
-    && npm install --save fontmin
+    && npm install --save fontmin \
+    && apt-get update && apt-get install -y git --no-install-recommends \
+    && rm -r /var/lib/apt/lists/*
 
 
 WORKDIR /blog
