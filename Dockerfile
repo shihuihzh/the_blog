@@ -16,6 +16,7 @@ RUN apt-get update && apt-get install -y git --no-install-recommends \
     && tar -zxvf "hugo_$VERSION_ARCH.tgz" \
     && mv hugo /blog/blog \
     && chmod 777 /blog/blog/hugo \
+    && chmod 777 /blog/blog/start.sh \
     && cd / \
     && rm -rf /temp \
     && npm install --save fontmin \
@@ -23,6 +24,9 @@ RUN apt-get update && apt-get install -y git --no-install-recommends \
 
 
 WORKDIR /blog/blog
+VOLUME /blog/blog/public
+
+CMD ["./start.sh"]
 
 EXPOSE 8080
 EXPOSE 8888
