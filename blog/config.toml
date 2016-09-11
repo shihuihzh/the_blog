@@ -1,4 +1,4 @@
-BaseUrl= "http://52.79.98.58/"
+BaseUrl= "https://blog.zhanhao.xyz/"
 LanguageCode= "zh-CN"
 Title= "测试博客"
 paginate = 5
@@ -15,7 +15,7 @@ hasCJKLanguage = true
   cover = "images/cover.jpg"
   author = "Zhanhao"
   authorlocation = "Guangzhou, China"
-  authorwebsite = "http://52.79.98.58/"
+  authorwebsite = "https://blog.zhanhao.xyz/"
   bio= "my bio"
   logo = "images/logo.png"
   #googleAnalyticsUserID = "UA-79101-12"
