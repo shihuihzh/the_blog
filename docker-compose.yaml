@@ -1,0 +1,9 @@
+blog:
+    image: zhanhao/blog
+    ports:
+        - "18888:8888"
+        - "18080:8080"
+    volumes:
+       - "~/blog:/blog/blog/public"
+    restart: always
+    
