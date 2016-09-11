@@ -7,7 +7,7 @@ menu = "main"
 share = true
 slug = "about"
 tags = ["about"]
-title = "关于我"
+title = "About me"
 
 +++
 
