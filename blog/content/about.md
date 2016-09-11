@@ -1,14 +1,15 @@
 +++
 author = ""
 comments = true
-date = "2016-01-11T23:09:03+08:00"
+date = "2016-09-11T23:09:03+08:00"
 draft = false
-image = ""
 menu = "main"
 share = true
 slug = "about"
-tags = ["tag1", "tag2"]
-title = "about"
+tags = ["about"]
+title = "关于我"
 
 +++
+
+很懒，不知道写什么，改天再补充。。。
 
