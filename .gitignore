@@ -36,6 +36,7 @@
 
 # backup and gens
 *.bak
+blog/script/upload.js
 logs/
 public/
 bak/
