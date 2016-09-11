@@ -10,16 +10,16 @@ var imagesDir = "./static/images"
 //uploadFiles(imagesDir, "/images/", "image/png")
 
 exports.uploadAll = function() {
+	console.log("font upload...")
 	upload.uploadFiles(fontDir, "/fonts/", null)
-	console.log("font upload complate...")
-
+	
+	console.log("js upload...")
 	upload.uploadFiles(jsDir, "/js/", "application/javascript")
-	console.log("font upload complate...")
-
+	
+	console.log("css upload...")
 	upload.uploadFiles(cssDir, "/css/", "text/css")
-	console.log("css upload complate...")
-
+	
+	console.log("images upload...")
 	upload.uploadFiles(imagesDir, "/images/", "image/png")
-	console.log("images upload complate...")
 	
 }
