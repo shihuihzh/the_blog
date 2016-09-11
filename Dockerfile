@@ -22,6 +22,7 @@ RUN apt-get update && apt-get install -y git --no-install-recommends \
     && npm install --save fontmin \
     && npm install --save upyun
 
+ADD upload.js /blog/blog/script/upload.js
 
 WORKDIR /blog/blog
 VOLUME /blog/blog/public
