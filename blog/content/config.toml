@@ -1,0 +1,47 @@
+BaseUrl= "https://blog.zhanhao.xyz/"
+LanguageCode= "zh-CN"
+Title= "Zhanhao"
+paginate = 5
+theme = "casper"
+#DisqusShortname = "hzh"
+Copyright = "All rights reserved - 2016"
+canonifyurls = true
+hasCJKLanguage = true
+
+[params]
+  staticUrl = "https://hzhblog.b0.upaiyun.com/"
+  description = "Time wait for no one"
+  cover = "images/cover.jpg"
+  author = "Zhanhao Wong"
+  authorlocation = "Guangzhou, China"
+  authorwebsite = "https://blog.zhanhao.xyz/"
+  bio= "慢慢迈向全栈的软件攻城狮"
+  logo = "images/logo.png"
+  #googleAnalyticsUserID = "UA-79101-12"
+  # Optional RSS-Link, if not provided it defaults to the standard index.xml
+  #RSSLink = "http://feeds.feedburner.com/..." 
+  githubName = "shihuihzh"
+  # twitterName = "vjeantet"
+  # facebookName = ""
+  linkedinName = "展豪-黄-176025ba"
+  # set true if you are not proud of using Hugo (true will hide the footer note "Proudly published with HUGO.....")
+  hideHUGOSupport = false
+
+
+[permalinks]
+  post = "/:year/:month/:title/"
+
+[[menu.main]]
+  name = "Blog"
+  weight = -120
+  identifier = "blog"
+  url = "/"
+
+[[menu.main]]
+  name = "Github repos"
+  weight = 100
+  pre = "<h3>Follow me</h3>"
+  url = "https://github.com/shihuihzh"
+
+
+
