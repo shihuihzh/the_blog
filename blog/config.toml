@@ -1,6 +1,6 @@
 BaseUrl= "https://blog.zhanhao.xyz/"
 LanguageCode= "zh-CN"
-Title= "测试博客"
+Title= "Zhanhao"
 paginate = 5
 theme = "casper"
 #DisqusShortname = "hzh"
@@ -10,13 +10,12 @@ hasCJKLanguage = true
 
 [params]
   staticUrl = "https://hzhblog.b0.upaiyun.com/"
-  #staticUrl = "http://localhost:1313/"
-  description = "描述"
+  description = "Time wait for no one"
   cover = "images/cover.jpg"
-  author = "Zhanhao"
+  author = "Zhanhao Wong"
   authorlocation = "Guangzhou, China"
   authorwebsite = "https://blog.zhanhao.xyz/"
-  bio= "my bio"
+  bio= "慢慢迈向全栈的软件攻城狮"
   logo = "images/logo.png"
   #googleAnalyticsUserID = "UA-79101-12"
   # Optional RSS-Link, if not provided it defaults to the standard index.xml
@@ -24,12 +23,12 @@ hasCJKLanguage = true
   githubName = "shihuihzh"
   # twitterName = "vjeantet"
   # facebookName = ""
-  # linkedinName = ""
+  linkedinName = "shihuihzh"
   # set true if you are not proud of using Hugo (true will hide the footer note "Proudly published with HUGO.....")
   hideHUGOSupport = false
 
 
-  [permalinks]
+[permalinks]
   post = "/:year/:month/:title/"
 
 [[menu.main]]

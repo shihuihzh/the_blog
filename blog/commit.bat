@@ -1,3 +1,3 @@
 git add -A
-git commit -m 'commit post'
+git commit -m cp
 git push origin
