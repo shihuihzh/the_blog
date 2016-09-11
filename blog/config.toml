@@ -9,7 +9,7 @@ canonifyurls = true
 hasCJKLanguage = true
 
 [params]
-  staticUrl = "http://hzhblog.b0.upaiyun.com/"
+  staticUrl = "https://hzhblog.b0.upaiyun.com/"
   #staticUrl = "http://localhost:1313/"
   description = "描述"
   cover = "images/cover.jpg"
