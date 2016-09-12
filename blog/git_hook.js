@@ -13,6 +13,18 @@ var pullFromGit = function(callback) {
 			console.log("pull Error, " + stderr);
 		} else {
 			console.log("pull complate, " + stdout);
+			hugoGen(callback)
+		}
+	});
+} 
+
+// 更新 public 目录
+var hugoGen = function(callback) {
+	exec('./hugo', function(error, stdout, stderr) {
+		if(error) {
+			console.log("gen Error, " + stderr);
+		} else {
+			console.log("gen complate, " + stdout);
 			callback();
 		}
 	});

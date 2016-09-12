@@ -3,7 +3,7 @@ var fs = require('fs')
 //var crypto = require('crypto');
 
 // 又拍云仓库与创库管理员密码
-var upyun = new UPYUN('hzhblog', 'shihuihzh', 'a3338957', null, 'legacy');
+var upyun = new UPYUN('', '', '', null, 'legacy');
 
 //遍历读取文件
 function readFile(path, filesList) {
