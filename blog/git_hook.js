@@ -35,8 +35,8 @@ var server = http.createServer(function (request, response) {
     console.log(pathname);
     if(pathname.indexOf("github_hook.json")) {
     	pullFromGit(function() {
-    		fc.create();
-			upload.uploadAll();
+    		fc.create(upload.uploadAll);
+			//upload.uploadAll();
     	})
     }
 

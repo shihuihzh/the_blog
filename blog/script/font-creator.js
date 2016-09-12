@@ -57,7 +57,7 @@ function readFile(path, filesList) {
 	}
 }
 
-exports.create = function create() {
+exports.create = function create(callback) {
 	// 改用 nodejs 用模块调用
 	getAllFileText(fileDir, function(err, text) {
 		console.log(text.length);
@@ -81,6 +81,7 @@ exports.create = function create() {
 				throw err;
 			}
 
+			callback();
 			//console.log(files[0]);
 			// => { contents: <Buffer 00 01 00 ...> }
 		});
